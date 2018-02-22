@@ -20,6 +20,18 @@ extension UIView{
     }
 }
 
+//extension UIImage{
+//    @IBInspectable var ViewCorner: CGFloat{
+//        get{
+//            return layer.cornerRadius
+//        }
+//        set{
+//            layer.cornerRadius = newValue
+//            layer.masksToBounds = newValue > 0
+//        }
+//    }
+//}
+
 extension UIButton{
     @IBInspectable var btnCorner: CGFloat{
         get{

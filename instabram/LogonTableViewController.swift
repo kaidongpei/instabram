@@ -7,11 +7,37 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
+import FirebaseDatabase
+import SWMessages
 
 class LogonTableViewController: UITableViewController {
-
+    
+    
+    @IBOutlet weak var email: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var repassword: UITextField!
+    @IBOutlet weak var fname: UITextField!
+    @IBOutlet weak var lname: UITextField!
+    @IBOutlet weak var city: UITextField!
+    
+    var ref: DatabaseReference?
+    var storageRef = StorageReference()
+    @IBOutlet var tb: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ref = Database.database().reference()
+        storageRef = Storage.storage().reference()
+        
+        //title = "SIGNUP"
+        self.navigationItem.backBarButtonItem?.title = ""
+        self.navigationItem.leftBarButtonItem = nil;
+        let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.plain, target: nil, action: nil)
+        self.navigationItem.backBarButtonItem = backButton;
+        setupNavigationWithColor(UIColor.black)
+        tb.backgroundView = UIImageView(image: UIImage(named:  "backblur"))
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
@@ -24,19 +50,95 @@ class LogonTableViewController: UITableViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    func setupNavigationWithColor(_ color: UIColor) {
+        let font = UIFont.boldSystemFont(ofSize: 20);
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : color, NSAttributedStringKey.font : font as Any]
+        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
+        self.navigationController?.navigationBar.shadowImage = UIImage()
+        self.navigationController?.navigationBar.tintColor = color
+        
+    }
 
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 3
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        if section == 0{
+            return 3
+        } else if section == 1{
+            return 3
+        } else {
+            return 1
+        }
     }
-
+    @IBAction func subnit(_ sender: Any) {
+        if email.text?.count == 0 {
+            
+            SWMessage.sharedInstance.showNotificationWithTitle("Emain cannot be empty", subtitle: "Alert", type: .error)
+        }
+        else if fname.text?.count == 0 {
+            SWMessage.sharedInstance.showNotificationWithTitle("First name cannot be empty", subtitle: "Alert", type: .error)
+        }
+        else if lname.text?.count == 0 {
+            SWMessage.sharedInstance.showNotificationWithTitle("Last name cannot be empty", subtitle: "Alert", type: .error)
+        }
+        else if city.text?.count == 0 {
+            SWMessage.sharedInstance.showNotificationWithTitle("City cannot be empty", subtitle: "Alert", type: .error)
+        }
+        else if password.text != repassword.text {
+            SWMessage.sharedInstance.showNotificationWithTitle("Password does not match", subtitle: "Alert", type: .error)
+        }else {
+            Auth.auth().createUser(withEmail: email.text!, password: password.text!) { (user, error) in
+                if error == nil {
+                    let userDict = ["FirstName": self.fname.text!,
+                                    "LastName":self.lname.text!,
+                                    "Password": self.password.text!,
+                                    "UserId": user?.uid,
+                                    "EmailID": self.email.text!,
+                                    "City": self.city.text!]
+                    
+                    let publicUser = ["FirstName": self.fname.text!,
+                                      "LastName":self.lname.text!,
+                                      "isFriend": "false"
+                                      ]
+                    if let id = user?.uid {
+                        self.ref?.child("Users").child(id).updateChildValues(userDict, withCompletionBlock: { (error, dataBaseRef) in
+                            
+                            self.ref?.child("PublicUsers").child(id).updateChildValues(publicUser)
+                            
+                            if error == nil {
+                                Auth.auth().signIn(withEmail: self.email.text!, password: self.password.text!) { (user, error) in
+                                    if let err = error {
+                                        print(err.localizedDescription)
+                                        
+                                    } else {
+                                        let controller = self.storyboard?.instantiateViewController(withIdentifier: "tab") as? TabBarViewController
+                                        self.present(controller!, animated: true, completion: nil)
+                                    }
+                                }
+                            }
+                            else {
+                                print(error?.localizedDescription)
+                            }
+                        })
+                    }
+                    self.dismiss(animated: true, completion: nil)
+                }else{
+                    print(error?.localizedDescription)
+                }
+            }
+        }
+        
+        
+        
+        
+    }
+    
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

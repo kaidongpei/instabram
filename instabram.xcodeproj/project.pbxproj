@@ -12,9 +12,33 @@
 		AD0A44671FB24338004ADB5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0A44651FB24338004ADB5B /* Main.storyboard */; };
 		AD0A44691FB24338004ADB5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD0A44681FB24338004ADB5B /* Assets.xcassets */; };
 		AD0A446C1FB24338004ADB5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD0A446A1FB24338004ADB5B /* LaunchScreen.storyboard */; };
+		AD0A44741FB24458004ADB5B /* LoginTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0A44731FB24458004ADB5B /* LoginTableViewController.swift */; };
+		AD0A44761FB2446B004ADB5B /* LogonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0A44751FB2446B004ADB5B /* LogonTableViewController.swift */; };
+		AD0A44781FB24909004ADB5B /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD0A44771FB24909004ADB5B /* BaseViewController.swift */; };
+		AD1009321FB491AC005C10EB /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1009311FB491AC005C10EB /* Post.swift */; };
+		AD10DCC01FB9E410001C61B6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AD10DCBF1FB9E410001C61B6 /* GoogleService-Info.plist */; };
+		AD29586C1FB36CAA00519191 /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD29586B1FB36CAA00519191 /* CornerRadius.swift */; };
+		AD29586E1FB3F82300519191 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD29586D1FB3F82300519191 /* MainTableViewCell.swift */; };
+		AD42E1EC1FB5110200C72B99 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42E1EB1FB5110200C72B99 /* User.swift */; };
+		AD42E1EE1FB5612500C72B99 /* UsersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42E1ED1FB5612500C72B99 /* UsersViewController.swift */; };
+		AD42E1F01FB561BB00C72B99 /* UsersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD42E1EF1FB561BB00C72B99 /* UsersTableViewCell.swift */; };
+		AD567C0A1FBA0ECD0020BC36 /* ChatMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD567C091FBA0ECD0020BC36 /* ChatMessages.swift */; };
+		AD567C0C1FBA145E0020BC36 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD567C0B1FBA145E0020BC36 /* FriendsViewController.swift */; };
+		AD567C0E1FBA149B0020BC36 /* FriendsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD567C0D1FBA149B0020BC36 /* FriendsTableViewCell.swift */; };
+		AD567C101FBA154A0020BC36 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD567C0F1FBA154A0020BC36 /* ChatViewController.swift */; };
+		AD8DCEA21FBBE0CC005148A7 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD8DCEA11FBBE0CC005148A7 /* TestViewController.swift */; };
+		ADE8CD631FB25DDC0007E4EF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE8CD621FB25DDC0007E4EF /* MainViewController.swift */; };
+		ADE8CD671FB262C10007E4EF /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE8CD661FB262C10007E4EF /* TabBarViewController.swift */; };
+		ADE8CD691FB266A50007E4EF /* AccountTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE8CD681FB266A50007E4EF /* AccountTableViewController.swift */; };
+		ADE8CD6B1FB26A070007E4EF /* UpdataInfoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE8CD6A1FB26A070007E4EF /* UpdataInfoTableViewController.swift */; };
+		ADE8CD6D1FB26A1A0007E4EF /* UpdataPasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE8CD6C1FB26A1A0007E4EF /* UpdataPasswordTableViewController.swift */; };
+		F45BF304856011E1371DE3B4 /* Pods_instabram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87A72A37F47A6E1B0DCF5E9F /* Pods_instabram.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		37287B09024D2C2084F79078 /* Pods-instabram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instabram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-instabram/Pods-instabram.debug.xcconfig"; sourceTree = "<group>"; };
+		7AB844427A6150921E990290 /* Pods-instabram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instabram.release.xcconfig"; path = "Pods/Target Support Files/Pods-instabram/Pods-instabram.release.xcconfig"; sourceTree = "<group>"; };
+		87A72A37F47A6E1B0DCF5E9F /* Pods_instabram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instabram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0A445E1FB24338004ADB5B /* instabram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = instabram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD0A44611FB24338004ADB5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD0A44631FB24338004ADB5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +46,28 @@
 		AD0A44681FB24338004ADB5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AD0A446B1FB24338004ADB5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD0A446D1FB24338004ADB5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD0A44731FB24458004ADB5B /* LoginTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTableViewController.swift; sourceTree = "<group>"; };
+		AD0A44751FB2446B004ADB5B /* LogonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogonTableViewController.swift; sourceTree = "<group>"; };
+		AD0A44771FB24909004ADB5B /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AD1009311FB491AC005C10EB /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		AD10DCBE1FB9E270001C61B6 /* instabram.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = instabram.entitlements; sourceTree = "<group>"; };
+		AD10DCBF1FB9E410001C61B6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AD29586B1FB36CAA00519191 /* CornerRadius.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
+		AD29586D1FB3F82300519191 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		AD42E1EB1FB5110200C72B99 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AD42E1ED1FB5612500C72B99 /* UsersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewController.swift; sourceTree = "<group>"; };
+		AD42E1EF1FB561BB00C72B99 /* UsersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersTableViewCell.swift; sourceTree = "<group>"; };
+		AD4D24D11FE3D78F00DF983C /* instabram-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "instabram-Bridging-Header.h"; sourceTree = "<group>"; };
+		AD567C091FBA0ECD0020BC36 /* ChatMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessages.swift; sourceTree = "<group>"; };
+		AD567C0B1FBA145E0020BC36 /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		AD567C0D1FBA149B0020BC36 /* FriendsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsTableViewCell.swift; sourceTree = "<group>"; };
+		AD567C0F1FBA154A0020BC36 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		AD8DCEA11FBBE0CC005148A7 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		ADE8CD621FB25DDC0007E4EF /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		ADE8CD661FB262C10007E4EF /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		ADE8CD681FB266A50007E4EF /* AccountTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountTableViewController.swift; sourceTree = "<group>"; };
+		ADE8CD6A1FB26A070007E4EF /* UpdataInfoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdataInfoTableViewController.swift; sourceTree = "<group>"; };
+		ADE8CD6C1FB26A1A0007E4EF /* UpdataPasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdataPasswordTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +75,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F45BF304856011E1371DE3B4 /* Pods_instabram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		210A0A4EA648B60AFE89B4D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				37287B09024D2C2084F79078 /* Pods-instabram.debug.xcconfig */,
+				7AB844427A6150921E990290 /* Pods-instabram.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AD0A44551FB24338004ADB5B = {
 			isa = PBXGroup;
 			children = (
 				AD0A44601FB24338004ADB5B /* instabram */,
 				AD0A445F1FB24338004ADB5B /* Products */,
+				210A0A4EA648B60AFE89B4D5 /* Pods */,
+				C1926BA5555D09F7871E7AD0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +112,44 @@
 		AD0A44601FB24338004ADB5B /* instabram */ = {
 			isa = PBXGroup;
 			children = (
+				AD10DCBE1FB9E270001C61B6 /* instabram.entitlements */,
 				AD0A44611FB24338004ADB5B /* AppDelegate.swift */,
 				AD0A44631FB24338004ADB5B /* ViewController.swift */,
 				AD0A44651FB24338004ADB5B /* Main.storyboard */,
 				AD0A44681FB24338004ADB5B /* Assets.xcassets */,
-				AD0A446A1FB24338004ADB5B /* LaunchScreen.storyboard */,
 				AD0A446D1FB24338004ADB5B /* Info.plist */,
+				AD29586B1FB36CAA00519191 /* CornerRadius.swift */,
+				AD0A446A1FB24338004ADB5B /* LaunchScreen.storyboard */,
+				AD0A44771FB24909004ADB5B /* BaseViewController.swift */,
+				AD0A44731FB24458004ADB5B /* LoginTableViewController.swift */,
+				AD0A44751FB2446B004ADB5B /* LogonTableViewController.swift */,
+				ADE8CD661FB262C10007E4EF /* TabBarViewController.swift */,
+				ADE8CD681FB266A50007E4EF /* AccountTableViewController.swift */,
+				ADE8CD6A1FB26A070007E4EF /* UpdataInfoTableViewController.swift */,
+				ADE8CD6C1FB26A1A0007E4EF /* UpdataPasswordTableViewController.swift */,
+				AD10DCBF1FB9E410001C61B6 /* GoogleService-Info.plist */,
+				ADE8CD621FB25DDC0007E4EF /* MainViewController.swift */,
+				AD29586D1FB3F82300519191 /* MainTableViewCell.swift */,
+				AD42E1ED1FB5612500C72B99 /* UsersViewController.swift */,
+				AD42E1EF1FB561BB00C72B99 /* UsersTableViewCell.swift */,
+				AD1009311FB491AC005C10EB /* Post.swift */,
+				AD42E1EB1FB5110200C72B99 /* User.swift */,
+				AD567C091FBA0ECD0020BC36 /* ChatMessages.swift */,
+				AD567C0B1FBA145E0020BC36 /* FriendsViewController.swift */,
+				AD567C0D1FBA149B0020BC36 /* FriendsTableViewCell.swift */,
+				AD567C0F1FBA154A0020BC36 /* ChatViewController.swift */,
+				AD8DCEA11FBBE0CC005148A7 /* TestViewController.swift */,
+				AD4D24D11FE3D78F00DF983C /* instabram-Bridging-Header.h */,
 			);
 			path = instabram;
+			sourceTree = "<group>";
+		};
+		C1926BA5555D09F7871E7AD0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				87A72A37F47A6E1B0DCF5E9F /* Pods_instabram.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +159,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD0A44701FB24338004ADB5B /* Build configuration list for PBXNativeTarget "instabram" */;
 			buildPhases = (
+				D5E69BD3F3DA053AAECE7DA2 /* [CP] Check Pods Manifest.lock */,
 				AD0A445A1FB24338004ADB5B /* Sources */,
 				AD0A445B1FB24338004ADB5B /* Frameworks */,
 				AD0A445C1FB24338004ADB5B /* Resources */,
+				AD7C4311D57E0ABC1415F34C /* [CP] Embed Pods Frameworks */,
+				0F972957E90C51D4337B2950 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,7 +187,16 @@
 				TargetAttributes = {
 					AD0A445D1FB24338004ADB5B = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -124,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD0A446C1FB24338004ADB5B /* LaunchScreen.storyboard in Resources */,
+				AD10DCC01FB9E410001C61B6 /* GoogleService-Info.plist in Resources */,
 				AD0A44691FB24338004ADB5B /* Assets.xcassets in Resources */,
 				AD0A44671FB24338004ADB5B /* Main.storyboard in Resources */,
 			);
@@ -131,13 +232,117 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0F972957E90C51D4337B2950 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-instabram/Pods-instabram-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instabram/Pods-instabram-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD7C4311D57E0ABC1415F34C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-instabram/Pods-instabram-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKShareKit/FBSDKShareKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQMessagesViewController/JSQMessagesViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/JSQSystemSoundPlayer/JSQSystemSoundPlayer.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+				"${BUILT_PRODUCTS_DIR}/SWMessages/SWMessages.framework",
+				"${BUILT_PRODUCTS_DIR}/TwicketSegmentedControl/TwicketSegmentedControl.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKShareKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQMessagesViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JSQSystemSoundPlayer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SWMessages.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwicketSegmentedControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-instabram/Pods-instabram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5E69BD3F3DA053AAECE7DA2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-instabram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		AD0A445A1FB24338004ADB5B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD0A44781FB24909004ADB5B /* BaseViewController.swift in Sources */,
+				ADE8CD6B1FB26A070007E4EF /* UpdataInfoTableViewController.swift in Sources */,
 				AD0A44641FB24338004ADB5B /* ViewController.swift in Sources */,
 				AD0A44621FB24338004ADB5B /* AppDelegate.swift in Sources */,
+				AD1009321FB491AC005C10EB /* Post.swift in Sources */,
+				ADE8CD631FB25DDC0007E4EF /* MainViewController.swift in Sources */,
+				AD42E1EC1FB5110200C72B99 /* User.swift in Sources */,
+				AD8DCEA21FBBE0CC005148A7 /* TestViewController.swift in Sources */,
+				AD42E1EE1FB5612500C72B99 /* UsersViewController.swift in Sources */,
+				AD567C0E1FBA149B0020BC36 /* FriendsTableViewCell.swift in Sources */,
+				AD42E1F01FB561BB00C72B99 /* UsersTableViewCell.swift in Sources */,
+				AD567C0A1FBA0ECD0020BC36 /* ChatMessages.swift in Sources */,
+				AD567C0C1FBA145E0020BC36 /* FriendsViewController.swift in Sources */,
+				ADE8CD6D1FB26A1A0007E4EF /* UpdataPasswordTableViewController.swift in Sources */,
+				AD29586C1FB36CAA00519191 /* CornerRadius.swift in Sources */,
+				ADE8CD671FB262C10007E4EF /* TabBarViewController.swift in Sources */,
+				AD0A44741FB24458004ADB5B /* LoginTableViewController.swift in Sources */,
+				ADE8CD691FB266A50007E4EF /* AccountTableViewController.swift in Sources */,
+				AD29586E1FB3F82300519191 /* MainTableViewCell.swift in Sources */,
+				AD567C101FBA154A0020BC36 /* ChatViewController.swift in Sources */,
+				AD0A44761FB2446B004ADB5B /* LogonTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +477,19 @@
 		};
 		AD0A44711FB24338004ADB5B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37287B09024D2C2084F79078 /* Pods-instabram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = instabram/instabram.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6MSVWC4J65;
+				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = instabram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = KD.instabram;
+				PRODUCT_BUNDLE_IDENTIFIER = PN.instabram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "instabram/instabram-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -287,14 +497,18 @@
 		};
 		AD0A44721FB24338004ADB5B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AB844427A6150921E990290 /* Pods-instabram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = instabram/instabram.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6MSVWC4J65;
+				DEVELOPMENT_TEAM = RQAE768Z9N;
 				INFOPLIST_FILE = instabram/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = KD.instabram;
+				PRODUCT_BUNDLE_IDENTIFIER = PN.instabram;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "instabram/instabram-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

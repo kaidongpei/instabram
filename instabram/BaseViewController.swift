@@ -22,7 +22,7 @@ class BaseViewController: UIViewController {
    
     func setupNavigationWithColor(_ color: UIColor) {
         let font = UIFont.boldSystemFont(ofSize: 20);
-        self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : color, NSFontAttributeName : font as Any]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor : color, NSAttributedStringKey.font : font as Any]
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: UIBarMetrics.default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.navigationController?.navigationBar.tintColor = color

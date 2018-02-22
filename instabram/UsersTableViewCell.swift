@@ -8,8 +8,14 @@
 
 import UIKit
 
+//import FirebaseStorage
+
 class UsersTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var img: UIImageView!
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var addFriend: UIButton!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -20,5 +26,10 @@ class UsersTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+ 
+    @IBAction func addFriend(_ sender: UIButton) {
+       
 
+    }
+    
 }

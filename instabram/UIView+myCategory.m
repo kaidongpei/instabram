@@ -6,8 +6,11 @@
 //  Copyright © 2017 kaidong pei. All rights reserved.
 //
 
-#import "NSObject+myCategory.h"
+#import "UIView+myCategory.h"
+#import <UIKit/UIKit.h>
 
-@implementation NSObject (myCategory)
+@implementation UIView (myCategory)
+-(void)printName {
 
+}
 @end
